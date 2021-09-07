@@ -11,7 +11,7 @@ function test() {
 
     got=$(echo -n -e $input | ./$exe)
     if [[ $got != $expected ]]; then
-        echo "Got: $got, Expected: $expected(Input: $input)"
+        printf "Got: $got, Expected: $expected\nInput: $input\n"
         exit 1
     fi
 }
