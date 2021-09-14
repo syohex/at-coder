@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source ../../../script/test_func.sh
+
+test "36
+24" GREATER
+test "850
+3777" LESS
+test "9720246
+22516266" LESS
+test "123456789012345678901234567890
+234567890123456789012345678901" LESS
+test "1
+1" EQUAL
